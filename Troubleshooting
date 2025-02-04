@@ -1,0 +1,9 @@
+from circleshape import CircleShape
+from shot import Shot
+from player import Player
+
+print("for Player:",dir(Player))
+print("for Shot:",dir(Shot))
+print("for CircleShape",dir(CircleShape))
+
+
