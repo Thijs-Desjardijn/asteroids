@@ -1,14 +1,11 @@
 import pygame
-from constants import *
+import constants
 from circleshape import CircleShape
 
 
 class Shot(CircleShape):
     def __init__(self, x, y):
-        print("Before super call")  # Add this debug print
-        super().__init__(x, y, 5)
-        print("After super call")   # Add this debug print
-        print("shots created")
+        super().__init__(x, y, constants.SHOT_RADIUS)
 
     def draw(self, screen):
         pygame.draw.circle(screen, "white", self.position, self.radius, 2)
